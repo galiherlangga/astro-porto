@@ -4,16 +4,19 @@ export interface Props {
 	title: string;
 	body: string;
 	icons: string[];
+	href?: string;
 }
 
-const { title, body, icons } = Astro.props;
+const { title, body, icons, href } = Astro.props;
 ---
 
-<div class="bg-[#456691] rounded-lg shadow-lg shadow-slate-600 p-4">
-	<h3 class="md:text-lg mb-4">{title}</h3>
-	<p class="mb-4">{body}</p>
-	<div class="flex mb-4">
-		{ icons.map((icon) => <Icon src={icon} alt={icon} />) }
+<a href={href} target="_blank">
+	<div class="bg-[#456691] rounded-lg shadow-lg shadow-slate-600 p-4">
+		<h3 class="md:text-lg mb-4">{title}</h3>
+		<p class="mb-4">{body}</p>
+		<div class="flex mb-4">
+			{ icons.map((icon: string) => <Icon src={icon} alt={icon} />) }
+		</div>
 	</div>
-</div>
+</a>
 

@@ -1,0 +1,31 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+import projects from "../../data/projects.json";
+import templates from "../../data/templates.json";
+---
+
+<Layout title="Project">
+    <main>
+        <section class="my-10 mx-8 text-gray-300 md:mx-20 lg:mx-40 2xl:mx-60" id="project">
+            <h2 class="text-xl mb-4 font-bold md:text-2xl lg:text-3xl text-center">Featured Projects</h2>
+            <div class="grid grid-cols-2 gap-3 md:gap-6 md:grid-cols-3">
+                {
+                    projects.map((project: any) => {
+                        return <Card title={project.title} body={project.body} icons={project.icons}/>
+                    })
+                }
+            </div>
+        </section>
+        <section class="my-20 mx-8 text-gray-300 md:mx-20 lg:mx-40 2xl:mx-60" id="project">
+            <h2 class="text-xl mb-4 font-bold md:text-2xl lg:text-3xl text-center">Project Templates</h2>
+            <div class="grid grid-cols-2 gap-3 md:gap-6 md:grid-cols-3">
+                {
+                    templates.map((project: any) => {
+                        return <Card title={project.title} body={project.body} icons={project.icons} href={project.link}/>
+                    })
+                }
+            </div>
+        </section>
+    </main>
+</Layout>

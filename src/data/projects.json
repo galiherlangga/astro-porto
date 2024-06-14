@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Chronicle",
+        "body": "An online platform providing a serene space to honor and cherish the memories of loved ones. Built with Python, Django, and MySQL.",
+        "icons": ["python", "django", "mysql"]
+    },
+    {
+        "title": "Kanesa",
+        "body": "A comprehensive warehouse management system tailored for Japanese businesses, optimizing inventory, logistics, and storage. Developed with Laravel, Nuxt.js, and MySQL.",
+        "icons": ["laravel", "nuxtjs", "mysql"]
+    },
+    {
+        "title": "Sagami",
+        "body": "Efficient parking lot management solution designed for Japanese businesses, offering real-time tracking and payment processing capabilities. Powered by Laravel, Nuxt.js, and MySQL.",
+        "icons": ["laravel", "nuxtjs", "mysql"]
+    },
+    {
+        "title": "ITreat",
+        "body": "Integrated fabric distribution management system and e-commerce platform, enhancing supply chain management and online sales. Developed using Laravel and MySQL.",
+        "icons": ["laravel", "mysql"]
+    },
+    {
+        "title": "PORT",
+        "body": "A robust web-based system facilitating efficient management of land trading and company finances, featuring detailed insights and reporting tools. Built with Laravel, Vue, and MySQL.",
+        "icons": ["laravel", "vue", "mysql"]
+    },
+    {
+        "title": "Balimall",
+        "body": "Empowering Balinese companies with a localized e-commerce platform, facilitating online sales and business growth. Developed with Django and MySQL.",
+        "icons": ["django", "mysql"]
+    }
+]

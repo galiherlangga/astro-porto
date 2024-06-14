@@ -1,16 +1,16 @@
 ---
 import Card from "./Card.astro";
+import projects from "../data/projects.json";
 ---
 
 <section class="my-10 mx-8 text-gray-300 md:mx-20 lg:mx-40 2xl:mx-60" id="project">
     <h2 class="text-xl mb-4 font-bold md:text-2xl lg:text-3xl text-center">Featured Projects</h2>
     <div class="grid grid-cols-2 gap-3 md:gap-6 md:grid-cols-3">
-        <Card title="Chronicle" body="An online cemetery for your loved ones." icons={["python","django","mysql"]}/>
-        <Card title="Kanesa" body="A warehouse management system for Japanese companies." icons={["laravel","nuxtjs","mysql"]} />
-        <Card title="Sagami" body="A parking lot management system for Japanese companies." icons={["laravel","nuxtjs","mysql"]} />
-        <Card title="ITreat" body="A fabric distribution management system and e-commerce platform." icons={["laravel","mysql"]} />
-        <Card title="PORT" body="A web system for managing land trading & company finance." icons={["laravel","vue","mysql"]}/>
-        <Card title="Balimall" body="A local e-commerce platform for Balinese companies." icons={["django","mysql"]}/>
+        {
+            projects.map((project: any) => {
+                return <Card title={project.title} body={project.body} icons={project.icons}/>
+            })
+        }
     </div>
     <div class="text-center mt-14 lg:mt-20">
         <div class="flex justify-center">
@@ -20,6 +20,6 @@ import Card from "./Card.astro";
         <div class="flex justify-center">
             <p class="text-sm leading-6 mb-8 lg:w-1/2 md:leading-7 lg:text-lg">Craving more of those tantalizing tech creations? You’re in luck! Dive right into a treasure trove of programming prowess. Check the button below.</p>
         </div>
-        <a href="" class="bg-gray-800 p-4 rounded-lg shadow-lg">Discover More!</a>
+        <a href="/project" class="bg-gray-800 p-4 rounded-lg shadow-lg">Discover More!</a>
     </div>
 </section>

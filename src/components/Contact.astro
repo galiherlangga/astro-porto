@@ -1,3 +1,12 @@
+---
+let mails = {
+    name: "",
+    email: "",
+    message: "",
+};
+
+---
+
 <section class="my-20 mx-8 text-gray-300 text-center flex flex-col md:w-1/2 md:mx-auto md:my-24 lg:my-32" id="contact">
     <div class="flex justify-center mb-8">
         <img src="/svg/contact.svg" alt="contact" class="w-1/2 h-auto lg:w-1/4" />
@@ -8,19 +17,21 @@
         fullstack maestro? Look no further. Reach out and let the magic happen!
     </p>
     <div>
-        <form action="" class="">
+        <form action="mailto:galiherlanggadev@gmail.com" id="contact-form" method="post" class="">
             <input
                 type="text"
                 placeholder="Name"
+                value={mails.name}
                 class="w-full p-2 rounded-lg text-gray-900 mb-2 shadow-lg md:mb-4 lg:mb-6"
             />
             <input
                 type="email"
                 placeholder="Email"
+                value={mails.email}
                 class="w-full p-2 rounded-lg text-gray-900 mb-2 shadow-lg md:mb-4 lg:mb-6"
             />
             <textarea
-                name=""
+                name="message"
                 id=""
                 rows="5"
                 placeholder="Message"
