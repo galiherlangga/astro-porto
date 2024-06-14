@@ -1,25 +1,25 @@
 [
     {
         "title": "Photostudio Pro",
-        "body": "An online platform providing a serene space to honor and cherish the memories of loved ones. Built with Python, Django, and MySQL.",
+        "body": "A professional online platform dedicated to preserving and celebrating cherished memories. It offers a serene space for honoring loved ones.",
         "icons": ["wp"],
         "link": "https://project.galiherlangga.cloud/wp-photostudio-pro"
     },
     {
         "title": "Photostudio 2",
-        "body": "An online platform providing a serene space to honor and cherish the memories of loved ones. Built with Python, Django, and MySQL.",
+        "body": "An advanced digital platform designed for creating and sharing meaningful memories. It provides a comforting space for remembrance.",
         "icons": ["wp"],
         "link": "https://project.galiherlangga.cloud/photostudio-2"
     },
     {
         "title": "Photostories",
-        "body": "An online platform providing a serene space to honor and cherish the memories of loved ones. Built with Python, Django, and MySQL.",
+        "body": "A heartfelt online hub for capturing and honoring special life moments. It fosters a tranquil environment for reminiscing.",
         "icons": ["wp"],
         "link": "https://project.galiherlangga.cloud/photostories"
     },
     {
         "title": "Travel",
-        "body": "An online platform providing a serene space to honor and cherish the memories of loved ones. Built with Python, Django, and MySQL.",
+        "body": "A personalized digital journey to relive and share travel adventures. It provides a serene platform for recounting memorable trips.",
         "icons": ["wp"],
         "link": "https://project.galiherlangga.cloud/travel"
     }
